@@ -1,0 +1,236 @@
+*{
+   box-sizing: border-box;
+   margin: 0;
+   padding:0; 
+   font-family: 'Oswald', sans-serif;
+}
+.container{
+    width: 100%;
+
+}
+.top{
+display: flex;
+justify-content: center;
+border-bottom: 3px solid blueviolet;
+height: 120px;
+padding-top: 20px;
+}
+.nav{
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr ;
+    align-items: center;
+}
+.end{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.link{
+    text-decoration: none;
+    color: blueviolet;
+    font-weight:  600;
+}
+.center-header{
+    display: flex;
+    justify-content: space-between;
+    width: 1000px;
+}
+.contact-center{
+    display: flex;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: 150px 400px;
+    column-gap: 170px;
+    row-gap: 30px;
+    padding-bottom: 80px;
+}
+.lines-text{
+    display: flex;
+    flex-direction: column;
+    padding-top: 30px;
+    color: white;
+    width: 300px;
+}
+.send{
+    width: 120px;
+    height: 30px;
+    border-radius: 0.25rem;
+    background: orange;
+    color:blueviolet;
+    margin-top: 15px;
+    border: none;
+}
+.send:hover{
+    background:blueviolet;
+    color: orange;
+    transition: 1s;   
+}
+.end{
+    padding-top: 40px;
+}
+.input-name{
+    background-color: blueviolet;
+    border-radius: 0.25rem;
+    border: none;
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: white;
+}
+.input-email{
+    background-color: orange;
+    border-radius: 0.25rem;
+    border: none;
+    margin-top: 15px;
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: white;
+}
+.input-text{
+    height: 100px;
+    background-color:   blueviolet;
+    border-radius: 0.25rem;
+    border: none;
+    margin-top: 15px;
+    color: white;
+    padding-left: 10px;
+    padding-top: 10px;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    color: white;
+}
+input{
+    width: 300px;
+    color: white;
+}
+textarea{
+     overflow: auto;
+    resize: vertical;
+    color:white;
+    font-family: 'Oswald', sans-serif; 
+    width: 300px;
+}
+span{
+    color: orange;
+}
+.title-contact{
+    margin-top: 15px;
+}
+.middle{ 
+    min-width: 1024px;
+    display: flex; 
+    justify-content: center; 
+   border-bottom: 3px solid blueviolet;
+   padding-top: 30px;
+   padding-bottom: 30px;
+} 
+.title{ 
+text-align: center; 
+color: orange; 
+font-size: 50px; 
+} 
+.purple{ 
+    color: blueviolet; 
+} 
+.orange{ 
+    color: orange; 
+} 
+.subtitle{ 
+    font-size: 30px; 
+    text-align: center; 
+    margin-top: 20px;
+}
+.flex-main{
+    width: 504px;
+    display: flex;
+    align-items: center;
+  flex-direction: column;
+}
+.center-middle{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.img-center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@media (min-width:768px) and (max-width:1023px){
+.center-header{
+    display: flex;
+    justify-content: space-between;
+    width: 744px;
+}
+.middle{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 768px;
+}
+.center-middle{
+    display: grid;
+    grid-template-columns: 1fr;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.bus{
+    margin-top: 20px;
+}
+}
+@media screen and (min-width:320px) and (max-width:767px){
+    .center-header{
+        display: flex;
+        justify-content: space-between;
+        width: 296px;
+    }  
+    .nav{
+        list-style-type: none;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 20px 20px 20px;
+        row-gap: 10px;
+        align-items: center;
+    }
+    .contact-center{
+       margin: 0 auto;
+        display: grid;
+        grid-template-columns: 300px;
+        grid-template-rows:30px 1fr;
+        row-gap: 30px;
+        padding-bottom: 80px;
+        
+    }
+    .middle{
+        display: flex;
+        flex-direction: column;
+    }
+    .middle{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        min-width: 320px;
+    }
+    .flex-main{
+        width: 300px;
+    }
+    .center-middle{
+        display: grid;
+        grid-template-columns: 1fr;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .bus{
+        margin-top: 20px;
+        width: 300px;
+    }
+    .title{
+        font-size:35px;
+    }
+    .subtitle{
+        font-size:20px;
+    }
+}
